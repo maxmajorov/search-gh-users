@@ -14,7 +14,7 @@ const plugins = [
 ];
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/main.js",
   output: {
     filename: "main.[hash:8].js",
     path: path.join(__dirname, "/dist"),
@@ -33,5 +33,8 @@ module.exports = {
     port: 3200,
   },
   devtool: "source-map",
+  resolve: {
+    extensions: [".js"],
+  },
   plugins,
 };
