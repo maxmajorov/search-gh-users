@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Github users</title>
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search github users</h1>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="search_input" type="text" class="teal-text validate">
+                        <label for="search_input">Enter your username</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="insert">
+            <div class="row" id="cards_row"></div>
+        </div>
+        <div class="switch">
+            <div id="theme"></div> 
+            <label>
+                Off
+                <input type="checkbox" id="switch">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
+    </div>  
+   
+    <style type="text/css">
+       .container {
+            position: relative;
+            padding-top: 20px;
+       }
+       
+       .switch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top : 40px;
+            right: 0
+       }
+
+       #theme {
+        margin-right: 5px;
+        font-size: 18px;
+        font-weight: 500;
+       }
+      
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+
+</html>
