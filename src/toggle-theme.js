@@ -12,8 +12,6 @@ export function toggleTheme() {
   theme.textContent = textColor === "#84c7c1" ? "Dark side" : "Light side";
   document.documentElement.style.setProperty("color", textColor);
 
-  console.log(textColor);
-
   if (isThemeDark === "true") {
     toggle.checked = isThemeDark;
   }
